@@ -42,14 +42,14 @@ set_identity_source() {
 
 
     sso-config.sh \
-	    -add_identity_source \
-	    -type openldap \
-	    -baseUserDN $LDAP_BASE_USER_DN \
-	    -baseGroupDN $LDAP_BASE_GROUP_DN \
+        -add_identity_source \
+        -type openldap \
+        -baseUserDN $LDAP_BASE_USER_DN \
+        -baseGroupDN $LDAP_BASE_GROUP_DN \
         -domain $DOMAIN \
         -alias $ALIAS \
         -username $USERNAME \
-        -password $PASSWORDS \
+        -password $PASSWORD \
         -primaryURL "$LDAP_SERVER_URL:$LDAP_SERVER_PORT" \
         -useSSL true \
         -sslCert $LDAP_SSL_CERT
